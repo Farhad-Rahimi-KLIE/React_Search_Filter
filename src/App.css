@@ -1,0 +1,65 @@
+.App{
+  width: 100%;
+  background-color: coral;
+  display: grid;
+  grid-template-rows: 20em auto;
+}
+.menu{
+  display: grid;
+  place-items: center;
+}
+.menu_text{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+.menu_text h1{
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+.menu_text p{
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.menu_text input{
+  margin-top: 3em;
+  padding: .5em 1em;
+  border: solid 1px transparent;
+  border-radius: 20px;
+  box-shadow: 0 0 5px black;
+  outline: none;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  gap: 1em;
+  padding: 1em;
+}
+.card{
+  background-color: white;
+  box-shadow: 0 0 5px black;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.em{
+  font-size: 3em;
+}
+.search{
+  all: unset;
+  margin-left: 3em;
+  padding: .3em 1em;
+  box-shadow: 0 0 5px black;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+}
+@media (min-width:600px){
+  .container{
+    width :70%;
+    margin-inline: auto;
+  }
+}
